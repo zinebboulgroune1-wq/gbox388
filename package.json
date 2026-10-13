@@ -1,0 +1,21 @@
+{
+  "name": "giftbox377",
+  "version": "1.0.0",
+  "private": true,
+  "description": "giftbox377 online store: storefront, admin panel and API (Node.js + PostgreSQL)",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "reset-owner": "node scripts/reset-owner.js"
+  },
+  "dependencies": {
+    "compression": "1.8.2",
+    "express": "4.22.3",
+    "helmet": "7.2.0",
+    "nodemailer": "10.1.0",
+    "pg": "8.23.1"
+  }
+}

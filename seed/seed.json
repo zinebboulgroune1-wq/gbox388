@@ -1,0 +1,2362 @@
+{
+ "docs": {
+  "categories/women-copy-one-bags": {
+   "active": true,
+   "icon": "tote",
+   "name": "Copy One bags",
+   "nameAr": "شنط كوبي ون",
+   "order": 5,
+   "section": "women",
+   "tint": "#22304A"
+  },
+  "categories/men-scarves": {
+   "active": true,
+   "icon": "scarflong",
+   "name": "Scarves",
+   "nameAr": "شالات",
+   "order": 5,
+   "section": "men",
+   "tint": "#6B5A4A"
+  },
+  "categories/men-tshirts": {
+   "active": true,
+   "icon": "tee",
+   "name": "T-shirts",
+   "nameAr": "تيشيرتات",
+   "order": 1,
+   "section": "men",
+   "tint": "#5E6B4E"
+  },
+  "categories/women-scarves": {
+   "active": true,
+   "icon": "scarf",
+   "name": "Scarves",
+   "nameAr": "شالات",
+   "order": 6,
+   "section": "women",
+   "tint": "#2E4A7D"
+  },
+  "categories/men-watches": {
+   "active": true,
+   "icon": "watch",
+   "name": "Watches",
+   "nameAr": "ساعات",
+   "order": 4,
+   "section": "men",
+   "tint": "#59606B"
+  },
+  "categories/women-winter-shoes": {
+   "active": true,
+   "icon": "boot",
+   "name": "Winter shoes",
+   "nameAr": "أحذية شتوية",
+   "order": 3,
+   "section": "women",
+   "tint": "#8A5A3A"
+  },
+  "categories/women-clothing": {
+   "active": true,
+   "icon": "dress",
+   "name": "Women's clothing",
+   "nameAr": "ملابس نسائية",
+   "order": 9,
+   "section": "women",
+   "tint": "#C9A770"
+  },
+  "categories/women-heels-7": {
+   "active": true,
+   "icon": "block",
+   "name": "High heels · 7 cm",
+   "nameAr": "كعب عالي · 7 سم",
+   "order": 1,
+   "section": "women",
+   "tint": "#B4875A"
+  },
+  "categories/women-sunglasses": {
+   "active": true,
+   "icon": "cateye",
+   "name": "Sunglasses",
+   "nameAr": "نظارات شمسية",
+   "order": 7,
+   "section": "women",
+   "tint": "#6B4A2E"
+  },
+  "categories/men-shoes": {
+   "active": true,
+   "icon": "sneaker",
+   "name": "Shoes",
+   "nameAr": "أحذية",
+   "order": 2,
+   "section": "men",
+   "tint": "#3E5C76"
+  },
+  "categories/men-sunglasses": {
+   "active": true,
+   "icon": "aviator",
+   "name": "Sunglasses",
+   "nameAr": "نظارات شمسية",
+   "order": 3,
+   "section": "men",
+   "tint": "#3D4A36"
+  },
+  "categories/women-master-bags": {
+   "active": true,
+   "icon": "tophandle",
+   "name": "Master bags",
+   "nameAr": "شنط ماستر",
+   "order": 4,
+   "section": "women",
+   "tint": "#7A4E2D"
+  },
+  "categories/women-heels-10": {
+   "active": true,
+   "icon": "stiletto",
+   "name": "High heels · 10 cm",
+   "nameAr": "كعب عالي · 10 سم",
+   "order": 2,
+   "section": "women",
+   "tint": "#AE2A4F"
+  },
+  "categories/women-watches": {
+   "active": true,
+   "icon": "watch",
+   "name": "Watches",
+   "nameAr": "ساعات",
+   "order": 8,
+   "section": "women",
+   "tint": "#C99A86"
+  },
+  "products/meridian-steel": {
+   "active": true,
+   "art": "watch",
+   "badge": "Bestseller",
+   "cat": "men-watches",
+   "colors": [
+    {
+     "hex": "#9AA3AD",
+     "name": "Silver",
+     "nameAr": "فضي"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    }
+   ],
+   "createdAt": 1791460000000,
+   "desc": "Brushed stainless-steel case on a link bracelet, with a clean white dial.",
+   "descAr": "علبة من الستانلس ستيل المصقول مع سوار معدني وميناء أبيض أنيق.",
+   "images": [],
+   "isNew": true,
+   "name": "Meridian Steel Watch",
+   "nameAr": "ساعة ميريديان ستيل",
+   "order": 40,
+   "price": 65,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0201",
+   "specs": [
+    [
+     "Case",
+     "40 mm steel",
+     "العلبة",
+     "ستيل 40 مم"
+    ],
+    [
+     "Movement",
+     "Quartz",
+     "الحركة",
+     "كوارتز"
+    ],
+    [
+     "Water resistance",
+     "5 ATM",
+     "مقاومة الماء",
+     "5 ATM"
+    ]
+   ],
+   "stock": {
+    "One size": 15
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/hoop-set": {
+   "active": false,
+   "art": "hoops",
+   "badge": "",
+   "cat": "",
+   "colors": [
+    {
+     "hex": "#D4B26A",
+     "name": "Gold"
+    },
+    {
+     "hex": "#BFC3C9",
+     "name": "Silver"
+    }
+   ],
+   "createdAt": 1791229207591,
+   "desc": "Two pairs of everyday hoops, 20 mm and 30 mm.",
+   "images": [],
+   "isNew": true,
+   "name": "Gold Hoop Set",
+   "order": 23,
+   "price": 25,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0123",
+   "specs": [
+    [
+     "Material",
+     "925 silver, plated"
+    ],
+    [
+     "Sizes",
+     "20 mm + 30 mm"
+    ],
+    [
+     "Closure",
+     "Hinged"
+    ]
+   ],
+   "stock": {
+    "One size": 17
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/everyday-shoulder": {
+   "active": true,
+   "art": "tote",
+   "badge": "",
+   "cat": "women-copy-one-bags",
+   "colors": [
+    {
+     "hex": "#8B7D6B",
+     "name": "Taupe",
+     "nameAr": "رمادي بني"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    }
+   ],
+   "createdAt": 1791424000000,
+   "desc": "Soft shoulder bag with a zip top and an inside pocket.",
+   "descAr": "حقيبة كتف ناعمة بسحاب علوي وجيب داخلي.",
+   "images": [],
+   "isNew": false,
+   "name": "Everyday Shoulder Bag",
+   "nameAr": "حقيبة كتف يومية",
+   "order": 50,
+   "price": 39,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0211",
+   "specs": [
+    [
+     "Size",
+     "30 × 24 × 10 cm",
+     "الحجم",
+     "30 × 24 × 10 سم"
+    ],
+    [
+     "Closure",
+     "Zip",
+     "الإغلاق",
+     "سحاب"
+    ]
+   ],
+   "stock": {
+    "One size": 15
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/weekend-tote": {
+   "active": true,
+   "art": "tote",
+   "badge": "",
+   "cat": "women-copy-one-bags",
+   "colors": [
+    {
+     "hex": "#22304A",
+     "name": "Navy",
+     "nameAr": "كحلي"
+    },
+    {
+     "hex": "#5E6B4E",
+     "name": "Olive",
+     "nameAr": "زيتي"
+    }
+   ],
+   "createdAt": 1791261607591,
+   "desc": "Roomy canvas-and-leather tote that fits a 15-inch laptop.",
+   "descAr": "حقيبة واسعة من الكانفس والجلد تتسع للابتوب 15 إنش.",
+   "images": [],
+   "isNew": false,
+   "name": "Weekend Tote",
+   "nameAr": "حقيبة ويكند توت",
+   "order": 14,
+   "price": 62,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0114",
+   "specs": [
+    [
+     "Size",
+     "42 × 32 × 15 cm",
+     "الحجم",
+     "42 × 32 × 15 سم"
+    ],
+    [
+     "Material",
+     "Waxed canvas",
+     "الخامة",
+     "قماش كانفس مشمع"
+    ],
+    [
+     "Inside",
+     "Zip pocket",
+     "من الداخل",
+     "جيب بسحاب"
+    ]
+   ],
+   "stock": {
+    "One size": 17
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/ribbed-crop": {
+   "active": true,
+   "art": "crop",
+   "badge": "",
+   "cat": "women-clothing",
+   "colors": [
+    {
+     "hex": "#B9A6D3",
+     "name": "Lilac",
+     "nameAr": "ليلكي"
+    },
+    {
+     "hex": "#F1EFEA",
+     "name": "White",
+     "nameAr": "أبيض"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    }
+   ],
+   "createdAt": 1791240007591,
+   "desc": "Close-fitting rib tee that pairs with high-waisted everything.",
+   "descAr": "تيشيرت ريب ضيق يناسب البناطيل ذات الخصر العالي.",
+   "images": [],
+   "isNew": false,
+   "name": "Ribbed Crop Tee",
+   "nameAr": "تيشيرت ريب قصير",
+   "order": 20,
+   "price": 15,
+   "salePrice": 12,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "sku": "GB-0120",
+   "specs": [
+    [
+     "Fabric",
+     "Cotton-modal rib",
+     "القماش",
+     "ريب قطن ومودال"
+    ],
+    [
+     "Fit",
+     "Slim, cropped",
+     "المقاس",
+     "ضيق وقصير"
+    ],
+    [
+     "Care",
+     "Wash 30°",
+     "العناية",
+     "غسيل على 30°"
+    ]
+   ],
+   "stock": {
+    "L": 9,
+    "M": 12,
+    "S": 12,
+    "XL": 12,
+    "XS": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/terry-slipper": {
+   "active": false,
+   "art": "terry",
+   "badge": "",
+   "cat": "",
+   "colors": [
+    {
+     "hex": "#F1EFEA",
+     "name": "White"
+    },
+    {
+     "hex": "#D6A6A6",
+     "name": "Dusty pink"
+    }
+   ],
+   "createdAt": 1791254407591,
+   "desc": "Closed-toe cotton terry slipper, the kind you keep from a good hotel.",
+   "images": [],
+   "isNew": false,
+   "name": "Terry Hotel Slipper",
+   "order": 16,
+   "price": 9,
+   "salePrice": null,
+   "sizes": [
+    "36-38",
+    "39-41",
+    "42-44"
+   ],
+   "sku": "GB-0116",
+   "specs": [
+    [
+     "Material",
+     "100% cotton terry"
+    ],
+    [
+     "Sole",
+     "Non-slip dots"
+    ],
+    [
+     "Care",
+     "Machine wash 30°"
+    ]
+   ],
+   "stock": {
+    "36-38": 9,
+    "39-41": 12,
+    "42-44": 12
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/soft-knit": {
+   "active": true,
+   "art": "knit",
+   "badge": "",
+   "cat": "women-clothing",
+   "colors": [
+    {
+     "hex": "#EDE5D8",
+     "name": "Cream",
+     "nameAr": "كريمي"
+    },
+    {
+     "hex": "#D6A6A6",
+     "name": "Dusty pink",
+     "nameAr": "وردي مطفي"
+    }
+   ],
+   "createdAt": 1791431200000,
+   "desc": "Relaxed long-sleeve cardigan in a soft brushed knit.",
+   "descAr": "كارديغان مريح بأكمام طويلة من نسيج محبوك ناعم.",
+   "images": [],
+   "isNew": false,
+   "name": "Soft Knit Cardigan",
+   "nameAr": "كارديغان محبوك ناعم",
+   "order": 48,
+   "price": 34,
+   "salePrice": 29,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "sku": "GB-0209",
+   "specs": [
+    [
+     "Fabric",
+     "Brushed knit",
+     "القماش",
+     "نسيج محبوك"
+    ],
+    [
+     "Fit",
+     "Relaxed",
+     "المقاس",
+     "واسع"
+    ]
+   ],
+   "stock": {
+    "L": 10,
+    "M": 10,
+    "S": 10,
+    "XL": 10,
+    "XS": 10
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/riviera-cateye": {
+   "active": true,
+   "art": "cateye",
+   "badge": "",
+   "cat": "women-sunglasses",
+   "colors": [
+    {
+     "hex": "#6B4A2E",
+     "name": "Tortoise",
+     "nameAr": "صدفي"
+    },
+    {
+     "hex": "#C77D86",
+     "name": "Rose",
+     "nameAr": "وردي"
+    }
+   ],
+   "createdAt": 1791279607591,
+   "desc": "Acetate cat-eye frames with gradient lenses and full UV protection.",
+   "descAr": "إطار أسيتات بتصميم عين القطة مع عدسات متدرجة وحماية كاملة من الأشعة فوق البنفسجية.",
+   "images": [],
+   "isNew": false,
+   "name": "Riviera Cat-Eye",
+   "nameAr": "نظارة ريفييرا كات آي",
+   "order": 9,
+   "price": 28,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0109",
+   "specs": [
+    [
+     "Lens",
+     "UV400, category 3",
+     "العدسة",
+     "UV400، الفئة 3"
+    ],
+    [
+     "Frame",
+     "Acetate, 52-18-140",
+     "الإطار",
+     "أسيتات، 52-18-140"
+    ],
+    [
+     "Includes",
+     "Leather case",
+     "يشمل",
+     "حافظة جلدية"
+    ]
+   ],
+   "stock": {
+    "One size": 17
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/cashmere-blend": {
+   "active": true,
+   "art": "scarflong",
+   "badge": "",
+   "cat": "men-scarves",
+   "colors": [
+    {
+     "hex": "#22304A",
+     "name": "Navy",
+     "nameAr": "كحلي"
+    },
+    {
+     "hex": "#8B7D6B",
+     "name": "Taupe",
+     "nameAr": "رمادي بني"
+    }
+   ],
+   "createdAt": 1791442000000,
+   "desc": "Soft cashmere-blend scarf in a fine twill weave.",
+   "descAr": "شال ناعم من مزيج الكشمير بنسيج تويل ناعم.",
+   "images": [],
+   "isNew": false,
+   "name": "Cashmere-Blend Scarf",
+   "nameAr": "شال مزيج كشمير",
+   "order": 45,
+   "price": 29,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0206",
+   "specs": [
+    [
+     "Material",
+     "30% cashmere",
+     "الخامة",
+     "30% كشمير"
+    ],
+    [
+     "Size",
+     "180 × 32 cm",
+     "الحجم",
+     "180 × 32 سم"
+    ]
+   ],
+   "stock": {
+    "One size": 15
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/louboutin-12cm-dr80": {
+   "active": true,
+   "art": "giftbox",
+   "badge": "Exclusive",
+   "cat": "women-heels-10",
+   "colors": [
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    }
+   ],
+   "createdAt": 1791312735528,
+   "desc": "nice heels 12cm black",
+   "descAr": "كعب عالٍ أنيق باللون الأسود بارتفاع 12 سم.",
+   "images": [
+    "1b9384d3a2e4d9ce7651b784974d3328",
+    "a9fb4f697a4395720ec0d6f64cb25912"
+   ],
+   "isNew": true,
+   "name": "louboutin 12cm",
+   "nameAr": "كعب لوبوتان 12 سم",
+   "order": 25,
+   "price": 35,
+   "salePrice": 29,
+   "sizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40"
+   ],
+   "sku": "",
+   "specs": [
+    [
+     "Heel height",
+     "12 cm",
+     "ارتفاع الكعب",
+     "12 سم"
+    ]
+   ],
+   "stock": {
+    "36": 5,
+    "37": 5,
+    "38": 4,
+    "39": 5,
+    "40": 5
+   },
+   "updatedAt": 1791312759709
+  },
+  "products/vela-stiletto": {
+   "active": true,
+   "art": "stiletto",
+   "badge": "Bestseller",
+   "cat": "women-heels-10",
+   "colors": [
+    {
+     "hex": "#AE2A4F",
+     "name": "Raspberry",
+     "nameAr": "توتي"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    },
+    {
+     "hex": "#D9B39A",
+     "name": "Nude",
+     "nameAr": "نود"
+    }
+   ],
+   "createdAt": 1791294007591,
+   "desc": "A pointed-toe pump on a slim 10 cm heel, cushioned under the ball of the foot.",
+   "descAr": "حذاء بمقدمة مدببة على كعب رفيع بارتفاع 10 سم، مبطن تحت مقدمة القدم.",
+   "images": [],
+   "isNew": false,
+   "name": "Vela Stiletto",
+   "nameAr": "كعب فيلا ستيليتو",
+   "order": 5,
+   "price": 52,
+   "salePrice": null,
+   "sizes": [
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sku": "GB-0105",
+   "specs": [
+    [
+     "Heel height",
+     "10 cm",
+     "ارتفاع الكعب",
+     "10 سم"
+    ],
+    [
+     "Upper",
+     "Patent leather",
+     "الجزء العلوي",
+     "جلد لامع"
+    ],
+    [
+     "Insole",
+     "Memory foam",
+     "النعل الداخلي",
+     "إسفنج ميموري"
+    ]
+   ],
+   "stock": {
+    "35": 9,
+    "36": 12,
+    "37": 12,
+    "38": 9,
+    "39": 12,
+    "40": 12,
+    "41": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/silk-scarf": {
+   "active": true,
+   "art": "scarf",
+   "badge": "",
+   "cat": "women-scarves",
+   "colors": [
+    {
+     "hex": "#2E4A7D",
+     "name": "Navy",
+     "nameAr": "كحلي"
+    },
+    {
+     "hex": "#AE2A4F",
+     "name": "Raspberry",
+     "nameAr": "توتي"
+    }
+   ],
+   "createdAt": 1791236407591,
+   "desc": "Hand-rolled silk twill square with a medallion print.",
+   "descAr": "شال من حرير التويل بحواف ملفوفة يدوياً ونقشة ميدالية.",
+   "images": [],
+   "isNew": false,
+   "name": "Silk Square Scarf",
+   "nameAr": "شال حرير مربع",
+   "order": 21,
+   "price": 22,
+   "salePrice": null,
+   "sizes": [
+    "90 × 90 cm"
+   ],
+   "sku": "GB-0121",
+   "specs": [
+    [
+     "Material",
+     "100% silk twill",
+     "الخامة",
+     "حرير تويل 100%"
+    ],
+    [
+     "Size",
+     "90 × 90 cm",
+     "الحجم",
+     "90 × 90 سم"
+    ],
+    [
+     "Edges",
+     "Hand-rolled",
+     "الحواف",
+     "ملفوفة يدوياً"
+    ]
+   ],
+   "stock": {
+    "90 × 90 cm": 17
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/pima-boxy": {
+   "active": true,
+   "art": "tee",
+   "badge": "",
+   "cat": "men-tshirts",
+   "colors": [
+    {
+     "hex": "#22304A",
+     "name": "Navy",
+     "nameAr": "كحلي"
+    },
+    {
+     "hex": "#B0715A",
+     "name": "Clay",
+     "nameAr": "طيني"
+    }
+   ],
+   "createdAt": 1791243607591,
+   "desc": "Soft long-staple Pima cotton in a cropped, boxy cut.",
+   "descAr": "قطن بيما ناعم طويل الألياف بقصة مربعة قصيرة.",
+   "images": [],
+   "isNew": true,
+   "name": "Boxy Pima Tee",
+   "nameAr": "تيشيرت بيما بوكسي",
+   "order": 19,
+   "price": 18,
+   "salePrice": null,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "sku": "GB-0119",
+   "specs": [
+    [
+     "Fabric",
+     "Pima cotton jersey",
+     "القماش",
+     "جيرسي قطن بيما"
+    ],
+    [
+     "Fit",
+     "Boxy",
+     "المقاس",
+     "مربع"
+    ],
+    [
+     "Length",
+     "Hip",
+     "الطول",
+     "حتى الورك"
+    ]
+   ],
+   "stock": {
+    "L": 9,
+    "M": 12,
+    "S": 12,
+    "XL": 12,
+    "XS": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/cloud-slide": {
+   "active": false,
+   "art": "slide",
+   "badge": "",
+   "cat": "",
+   "colors": [
+    {
+     "hex": "#B9A6D3",
+     "name": "Lilac"
+    },
+    {
+     "hex": "#EDB59A",
+     "name": "Peach"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black"
+    }
+   ],
+   "createdAt": 1791258007591,
+   "desc": "Soft, thick-soled slide for home, pool and beach.",
+   "images": [],
+   "isNew": false,
+   "name": "Cloud Slide",
+   "order": 15,
+   "price": 12,
+   "salePrice": null,
+   "sizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sku": "GB-0115",
+   "specs": [
+    [
+     "Material",
+     "EVA foam"
+    ],
+    [
+     "Sole height",
+     "4 cm"
+    ],
+    [
+     "Care",
+     "Rinse clean"
+    ]
+   ],
+   "stock": {
+    "36": 9,
+    "37": 12,
+    "38": 12,
+    "39": 9,
+    "40": 12,
+    "41": 12,
+    "42": 9,
+    "43": 12,
+    "44": 12,
+    "45": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/nomad-boot": {
+   "active": true,
+   "art": "boot",
+   "badge": "",
+   "cat": "women-winter-shoes",
+   "colors": [
+    {
+     "hex": "#B79A72",
+     "name": "Sand",
+     "nameAr": "رملي"
+    },
+    {
+     "hex": "#4A3426",
+     "name": "Espresso",
+     "nameAr": "بني قهوة"
+    }
+   ],
+   "createdAt": 1791301207591,
+   "desc": "Water-repellent suede ankle boot with a lug sole for city winters.",
+   "descAr": "بوت كاحل من الشامواه المقاوم للماء بنعل مسنن لشتاء المدينة.",
+   "images": [],
+   "isNew": true,
+   "name": "Nomad Suede Boot",
+   "nameAr": "بوت نوماد شامواه",
+   "order": 3,
+   "price": 72,
+   "salePrice": null,
+   "sizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sku": "GB-0103",
+   "specs": [
+    [
+     "Upper",
+     "Treated suede",
+     "الجزء العلوي",
+     "شامواه معالج"
+    ],
+    [
+     "Shaft height",
+     "14 cm",
+     "ارتفاع الساق",
+     "14 سم"
+    ],
+    [
+     "Sole",
+     "Commando rubber",
+     "النعل",
+     "مطاط كوماندو"
+    ]
+   ],
+   "stock": {
+    "36": 9,
+    "37": 12,
+    "38": 12,
+    "39": 9,
+    "40": 12,
+    "41": 12,
+    "42": 9,
+    "43": 12,
+    "44": 12,
+    "45": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/harbor-square": {
+   "active": true,
+   "art": "round",
+   "badge": "",
+   "cat": "men-sunglasses",
+   "colors": [
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    },
+    {
+     "hex": "#6B4A2E",
+     "name": "Tortoise",
+     "nameAr": "صدفي"
+    }
+   ],
+   "createdAt": 1791438400000,
+   "desc": "Bold square acetate frames with polarised lenses.",
+   "descAr": "إطار أسيتات مربع جريء مع عدسات مستقطبة.",
+   "images": [],
+   "isNew": false,
+   "name": "Harbor Square Sunglasses",
+   "nameAr": "نظارة هاربر مربعة",
+   "order": 46,
+   "price": 26,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0207",
+   "specs": [
+    [
+     "Lens",
+     "Polarised UV400",
+     "العدسة",
+     "مستقطبة UV400"
+    ],
+    [
+     "Frame",
+     "Acetate",
+     "الإطار",
+     "أسيتات"
+    ]
+   ],
+   "stock": {
+    "One size": 15
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/gift-card": {
+   "active": false,
+   "art": "card",
+   "badge": "",
+   "cat": "",
+   "colors": [
+    {
+     "hex": "#AE2A4F",
+     "name": "Raspberry"
+    },
+    {
+     "hex": "#22304A",
+     "name": "Midnight"
+    }
+   ],
+   "createdAt": 1791225607591,
+   "desc": "Let them choose. Delivered in a ribbon box with a printed card.",
+   "images": [],
+   "isNew": false,
+   "name": "GiftBox Gift Card",
+   "order": 24,
+   "price": 25,
+   "salePrice": null,
+   "sizes": [
+    "JOD 25"
+   ],
+   "sku": "GB-0124",
+   "specs": [
+    [
+     "Valid",
+     "12 months"
+    ],
+    [
+     "Use",
+     "Online, any category"
+    ],
+    [
+     "Delivery",
+     "Boxed, 2–4 days"
+    ]
+   ],
+   "stock": {
+    "JOD 25": 50
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/leather-belt": {
+   "active": false,
+   "art": "belt",
+   "badge": "",
+   "cat": "",
+   "colors": [
+    {
+     "hex": "#1C1A1E",
+     "name": "Black"
+    },
+    {
+     "hex": "#A86B3C",
+     "name": "Tan"
+    }
+   ],
+   "createdAt": 1791232807591,
+   "desc": "Vegetable-tanned leather belt with a brushed gold buckle.",
+   "images": [],
+   "isNew": false,
+   "name": "Classic Leather Belt",
+   "order": 22,
+   "price": 16,
+   "salePrice": null,
+   "sizes": [
+    "75",
+    "80",
+    "85",
+    "90",
+    "95"
+   ],
+   "sku": "GB-0122",
+   "specs": [
+    [
+     "Width",
+     "3 cm"
+    ],
+    [
+     "Material",
+     "Veg-tan leather"
+    ],
+    [
+     "Buckle",
+     "Brass"
+    ]
+   ],
+   "stock": {
+    "75": 9,
+    "80": 12,
+    "85": 12,
+    "90": 9,
+    "95": 12
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/highland-wool": {
+   "active": true,
+   "art": "scarflong",
+   "badge": "",
+   "cat": "men-scarves",
+   "colors": [
+    {
+     "hex": "#3B3A40",
+     "name": "Charcoal",
+     "nameAr": "فحمي"
+    },
+    {
+     "hex": "#B4875A",
+     "name": "Camel",
+     "nameAr": "جملي"
+    }
+   ],
+   "createdAt": 1791445600000,
+   "desc": "Warm brushed-wool scarf with fringed ends.",
+   "descAr": "شال صوف دافئ بملمس ناعم وأطراف مهدّبة.",
+   "images": [],
+   "isNew": true,
+   "name": "Highland Wool Scarf",
+   "nameAr": "شال هايلاند صوف",
+   "order": 44,
+   "price": 19,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0205",
+   "specs": [
+    [
+     "Material",
+     "Wool blend",
+     "الخامة",
+     "مزيج صوف"
+    ],
+    [
+     "Size",
+     "180 × 30 cm",
+     "الحجم",
+     "180 × 30 سم"
+    ]
+   ],
+   "stock": {
+    "One size": 15
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/linea-court": {
+   "active": true,
+   "art": "sneaker",
+   "badge": "",
+   "cat": "men-shoes",
+   "colors": [
+    {
+     "hex": "#F1EFEA",
+     "name": "White",
+     "nameAr": "أبيض"
+    },
+    {
+     "hex": "#E3B5B2",
+     "name": "Blush",
+     "nameAr": "وردي فاتح"
+    }
+   ],
+   "createdAt": 1791297607591,
+   "desc": "Clean leather court sneaker that goes with denim, tailoring and everything between.",
+   "descAr": "حذاء رياضي جلدي بسيط يناسب الجينز والملابس الرسمية وكل ما بينهما.",
+   "images": [],
+   "isNew": false,
+   "name": "Linea Court Sneaker",
+   "nameAr": "حذاء لينيا كورت",
+   "order": 4,
+   "price": 35,
+   "salePrice": null,
+   "sizes": [
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sku": "GB-0104",
+   "specs": [
+    [
+     "Upper",
+     "Nappa leather",
+     "الجزء العلوي",
+     "جلد نابا"
+    ],
+    [
+     "Sole",
+     "Cupsole rubber",
+     "النعل",
+     "نعل مطاطي"
+    ],
+    [
+     "Fit",
+     "Half size large",
+     "المقاس",
+     "أكبر بنصف مقاس"
+    ]
+   ],
+   "stock": {
+    "40": 9,
+    "41": 12,
+    "42": 12,
+    "43": 9,
+    "44": 12,
+    "45": 12
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/petite-bracelet": {
+   "active": true,
+   "art": "watch",
+   "badge": "Limited",
+   "cat": "women-watches",
+   "colors": [
+    {
+     "hex": "#D4B26A",
+     "name": "Gold",
+     "nameAr": "ذهبي"
+    }
+   ],
+   "createdAt": 1791449200000,
+   "desc": "A small oval dial on a bracelet that doubles as jewellery.",
+   "descAr": "ميناء بيضاوي صغير على سوار يُلبس كقطعة مجوهرات.",
+   "images": [],
+   "isNew": false,
+   "name": "Petite Bracelet Watch",
+   "nameAr": "ساعة بيتيت بسوار",
+   "order": 43,
+   "price": 49,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0204",
+   "specs": [
+    [
+     "Case",
+     "26 mm",
+     "العلبة",
+     "26 مم"
+    ],
+    [
+     "Strap",
+     "Gold-tone bracelet",
+     "السوار",
+     "سوار ذهبي"
+    ]
+   ],
+   "stock": {
+    "One size": 15
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/mira-slingback": {
+   "active": true,
+   "art": "slingback",
+   "badge": "",
+   "cat": "women-heels-7",
+   "colors": [
+    {
+     "hex": "#E7DCCB",
+     "name": "Ecru",
+     "nameAr": "بيج فاتح"
+    },
+    {
+     "hex": "#1F2540",
+     "name": "Ink",
+     "nameAr": "أزرق حبري"
+    }
+   ],
+   "createdAt": 1791286807591,
+   "desc": "Kitten-heel slingback with an elastic strap that stays put.",
+   "descAr": "حذاء سلينغ باك بكعب 7 سم وحزام مطاطي يبقى في مكانه.",
+   "images": [],
+   "isNew": false,
+   "name": "Mira Slingback",
+   "nameAr": "كعب ميرا سلينغ باك",
+   "order": 7,
+   "price": 42,
+   "salePrice": 36,
+   "sizes": [
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sku": "GB-0107",
+   "specs": [
+    [
+     "Heel height",
+     "7 cm",
+     "ارتفاع الكعب",
+     "7 سم"
+    ],
+    [
+     "Upper",
+     "Leather",
+     "الجزء العلوي",
+     "جلد"
+    ],
+    [
+     "Toe",
+     "Almond",
+     "المقدمة",
+     "لوزية"
+    ]
+   ],
+   "stock": {
+    "35": 9,
+    "36": 12,
+    "37": 12,
+    "38": 9,
+    "39": 12,
+    "40": 12,
+    "41": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/mini-crossbody": {
+   "active": true,
+   "art": "crossbody",
+   "badge": "",
+   "cat": "women-master-bags",
+   "colors": [
+    {
+     "hex": "#AE2A4F",
+     "name": "Raspberry",
+     "nameAr": "توتي"
+    },
+    {
+     "hex": "#8EA48B",
+     "name": "Sage",
+     "nameAr": "أخضر مريمي"
+    }
+   ],
+   "createdAt": 1791265207591,
+   "desc": "Fits a phone, keys and a card holder. Adjustable chain-and-leather strap.",
+   "descAr": "تتسع للهاتف والمفاتيح وحافظة البطاقات. حزام سلسلة وجلد قابل للتعديل.",
+   "images": [],
+   "isNew": true,
+   "name": "Mini Crossbody",
+   "nameAr": "حقيبة كروس صغيرة",
+   "order": 13,
+   "price": 49,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0113",
+   "specs": [
+    [
+     "Size",
+     "19 × 12 × 6 cm",
+     "الحجم",
+     "19 × 12 × 6 سم"
+    ],
+    [
+     "Strap drop",
+     "55 cm",
+     "طول الحزام",
+     "55 سم"
+    ],
+    [
+     "Material",
+     "Smooth leather",
+     "الخامة",
+     "جلد ناعم"
+    ]
+   ],
+   "stock": {
+    "One size": 17
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/louboutin-7cm-black-peoj": {
+   "active": true,
+   "art": "giftbox",
+   "badge": "Limited",
+   "cat": "women-heels-7",
+   "colors": [
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    }
+   ],
+   "createdAt": 1791546514610,
+   "desc": "",
+   "descAr": "",
+   "images": [
+    "6857a664d3a58e2121d4402da37eb3cc"
+   ],
+   "isNew": true,
+   "name": "louboutin 7cm black",
+   "nameAr": "",
+   "order": 37,
+   "price": 30,
+   "salePrice": 25,
+   "sizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sku": "",
+   "specs": [
+    [
+     "Material",
+     "",
+     "الخامة",
+     ""
+    ]
+   ],
+   "stock": {
+    "36": 5,
+    "37": 5,
+    "38": 5,
+    "39": 5,
+    "40": 5,
+    "41": 5,
+    "42": 5,
+    "43": 5,
+    "44": 5,
+    "45": 5
+   },
+   "updatedAt": 1791546514610
+  },
+  "products/serra-block": {
+   "active": true,
+   "art": "block",
+   "badge": "",
+   "cat": "women-heels-7",
+   "colors": [
+    {
+     "hex": "#B4875A",
+     "name": "Camel",
+     "nameAr": "جملي"
+    },
+    {
+     "hex": "#5E1E2E",
+     "name": "Bordeaux",
+     "nameAr": "خمري"
+    }
+   ],
+   "createdAt": 1791290407591,
+   "desc": "Ankle-strap sandal on a stable 7 cm block heel. Dinner to dance floor.",
+   "descAr": "صندل بحزام للكاحل على كعب عريض ثابت بارتفاع 7 سم. من العشاء إلى الحفلة.",
+   "images": [],
+   "isNew": false,
+   "name": "Serra Block Heel",
+   "nameAr": "كعب سيرا عريض",
+   "order": 6,
+   "price": 44,
+   "salePrice": null,
+   "sizes": [
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sku": "GB-0106",
+   "specs": [
+    [
+     "Heel height",
+     "7 cm",
+     "ارتفاع الكعب",
+     "7 سم"
+    ],
+    [
+     "Upper",
+     "Suede",
+     "الجزء العلوي",
+     "شامواه"
+    ],
+    [
+     "Fastening",
+     "Gold-tone buckle",
+     "الإغلاق",
+     "إبزيم ذهبي"
+    ]
+   ],
+   "stock": {
+    "35": 9,
+    "36": 12,
+    "37": 12,
+    "38": 9,
+    "39": 12,
+    "40": 12,
+    "41": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/bodrum-round": {
+   "active": true,
+   "art": "round",
+   "badge": "",
+   "cat": "women-sunglasses",
+   "colors": [
+    {
+     "hex": "#3B3A40",
+     "name": "Smoke",
+     "nameAr": "رمادي دخاني"
+    },
+    {
+     "hex": "#B7792E",
+     "name": "Amber",
+     "nameAr": "كهرماني"
+    }
+   ],
+   "createdAt": 1791272407591,
+   "desc": "Lightweight round frames sized for smaller faces.",
+   "descAr": "إطار دائري خفيف الوزن مناسب للوجوه الصغيرة.",
+   "images": [],
+   "isNew": false,
+   "name": "Bodrum Round",
+   "nameAr": "نظارة بودروم دائرية",
+   "order": 11,
+   "price": 24,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0111",
+   "specs": [
+    [
+     "Lens",
+     "UV400, category 3",
+     "العدسة",
+     "UV400، الفئة 3"
+    ],
+    [
+     "Frame",
+     "Acetate, 48-21-145",
+     "الإطار",
+     "أسيتات، 48-21-145"
+    ],
+    [
+     "Weight",
+     "22 g",
+     "الوزن",
+     "22 غرام"
+    ]
+   ],
+   "stock": {
+    "One size": 17
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/noor-pump": {
+   "active": true,
+   "art": "stiletto",
+   "badge": "",
+   "cat": "women-heels-10",
+   "colors": [
+    {
+     "hex": "#1F5E4A",
+     "name": "Emerald",
+     "nameAr": "زمردي"
+    },
+    {
+     "hex": "#D8C29A",
+     "name": "Champagne",
+     "nameAr": "شمبانيا"
+    }
+   ],
+   "createdAt": 1791283207591,
+   "desc": "Duchess satin pump on a 9 cm heel, made for weddings and evenings out.",
+   "descAr": "حذاء ساتان دوتشس على كعب 10 سم، مثالي للأعراس والسهرات.",
+   "images": [],
+   "isNew": true,
+   "name": "Noor Satin Pump",
+   "nameAr": "كعب نور ساتان",
+   "order": 8,
+   "price": 59,
+   "salePrice": null,
+   "sizes": [
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sku": "GB-0108",
+   "specs": [
+    [
+     "Heel height",
+     "10 cm",
+     "ارتفاع الكعب",
+     "10 سم"
+    ],
+    [
+     "Upper",
+     "Duchess satin",
+     "الجزء العلوي",
+     "ساتان دوتشس"
+    ],
+    [
+     "Insole",
+     "Padded leather",
+     "النعل الداخلي",
+     "جلد مبطن"
+    ]
+   ],
+   "stock": {
+    "35": 9,
+    "36": 12,
+    "37": 12,
+    "38": 9,
+    "39": 12,
+    "40": 12,
+    "41": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/pilot-aviator": {
+   "active": true,
+   "art": "aviator",
+   "badge": "Bestseller",
+   "cat": "men-sunglasses",
+   "colors": [
+    {
+     "hex": "#3D4A36",
+     "name": "Green G-15",
+     "nameAr": "أخضر G-15"
+    },
+    {
+     "hex": "#6E4B32",
+     "name": "Brown",
+     "nameAr": "بني"
+    }
+   ],
+   "createdAt": 1791276007591,
+   "desc": "Classic double-bridge aviator with polarised lenses and a gold-tone frame.",
+   "descAr": "نظارة أفياتور كلاسيكية بجسر مزدوج وعدسات مستقطبة وإطار ذهبي.",
+   "images": [],
+   "isNew": false,
+   "name": "Pilot 58 Aviator",
+   "nameAr": "نظارة بايلوت 58 أفياتور",
+   "order": 10,
+   "price": 32,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0110",
+   "specs": [
+    [
+     "Lens",
+     "Polarised UV400",
+     "العدسة",
+     "مستقطبة UV400"
+    ],
+    [
+     "Frame",
+     "Metal, 58-14-140",
+     "الإطار",
+     "معدن، 58-14-140"
+    ],
+    [
+     "Includes",
+     "Cleaning cloth",
+     "يشمل",
+     "قطعة تنظيف"
+    ]
+   ],
+   "stock": {
+    "One size": 17
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/cote-loafer": {
+   "active": true,
+   "art": "loafer",
+   "badge": "",
+   "cat": "men-shoes",
+   "colors": [
+    {
+     "hex": "#8A4B2A",
+     "name": "Cognac",
+     "nameAr": "كونياك"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    }
+   ],
+   "createdAt": 1791304807591,
+   "desc": "Hand-finished penny loafer in full-grain leather with a brass keeper.",
+   "descAr": "حذاء لوفر بلمسات يدوية من الجلد الطبيعي الكامل مع حزام نحاسي.",
+   "images": [],
+   "isNew": true,
+   "name": "Côte Leather Loafer",
+   "nameAr": "لوفر كوت جلد",
+   "order": 2,
+   "price": 59,
+   "salePrice": null,
+   "sizes": [
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sku": "GB-0102",
+   "specs": [
+    [
+     "Upper",
+     "Full-grain leather",
+     "الجزء العلوي",
+     "جلد طبيعي كامل"
+    ],
+    [
+     "Lining",
+     "Calf leather",
+     "البطانة",
+     "جلد عجل"
+    ],
+    [
+     "Sole",
+     "Stacked leather",
+     "النعل",
+     "جلد متعدد الطبقات"
+    ]
+   ],
+   "stock": {
+    "40": 9,
+    "41": 12,
+    "42": 12,
+    "43": 9,
+    "44": 12,
+    "45": 12
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/chiffon-wrap": {
+   "active": true,
+   "art": "scarf",
+   "badge": "",
+   "cat": "women-scarves",
+   "colors": [
+    {
+     "hex": "#D6A6A6",
+     "name": "Dusty pink",
+     "nameAr": "وردي مطفي"
+    },
+    {
+     "hex": "#22304A",
+     "name": "Navy",
+     "nameAr": "كحلي"
+    },
+    {
+     "hex": "#EDE5D8",
+     "name": "Cream",
+     "nameAr": "كريمي"
+    }
+   ],
+   "createdAt": 1791420400000,
+   "desc": "Light chiffon scarf that drapes softly, for every day.",
+   "descAr": "شال شيفون خفيف بانسدال ناعم للاستخدام اليومي.",
+   "images": [],
+   "isNew": true,
+   "name": "Chiffon Wrap Scarf",
+   "nameAr": "شال شيفون",
+   "order": 51,
+   "price": 12,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0212",
+   "specs": [
+    [
+     "Material",
+     "Chiffon",
+     "الخامة",
+     "شيفون"
+    ],
+    [
+     "Size",
+     "180 × 70 cm",
+     "الحجم",
+     "180 × 70 سم"
+    ]
+   ],
+   "stock": {
+    "One size": 15
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/essential-tee": {
+   "active": true,
+   "art": "tee",
+   "badge": "Bestseller",
+   "cat": "men-tshirts",
+   "colors": [
+    {
+     "hex": "#F1EFEA",
+     "name": "White",
+     "nameAr": "أبيض"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    },
+    {
+     "hex": "#8EA48B",
+     "name": "Sage",
+     "nameAr": "أخضر مريمي"
+    }
+   ],
+   "createdAt": 1791247207591,
+   "desc": "A 240 gsm cotton tee with a relaxed fit and a neckline that keeps its shape.",
+   "descAr": "تيشيرت قطني بوزن 240 غرام بقصة مريحة وياقة تحافظ على شكلها.",
+   "images": [],
+   "isNew": false,
+   "name": "Essential Heavy Tee",
+   "nameAr": "تيشيرت إيسنشال سميك",
+   "order": 18,
+   "price": 14,
+   "salePrice": null,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "sku": "GB-0118",
+   "specs": [
+    [
+     "Fabric",
+     "240 gsm Aegean cotton",
+     "القماش",
+     "قطن إيجي 240 غرام"
+    ],
+    [
+     "Fit",
+     "Relaxed",
+     "المقاس",
+     "واسع"
+    ],
+    [
+     "Care",
+     "Wash 30°",
+     "العناية",
+     "غسيل على 30°"
+    ]
+   ],
+   "stock": {
+    "L": 9,
+    "M": 12,
+    "S": 12,
+    "XL": 12,
+    "XS": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/shearling-ankle": {
+   "active": true,
+   "art": "boot",
+   "badge": "",
+   "cat": "women-winter-shoes",
+   "colors": [
+    {
+     "hex": "#8A5A3A",
+     "name": "Chestnut",
+     "nameAr": "كستنائي"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    }
+   ],
+   "createdAt": 1791427600000,
+   "desc": "Suede ankle boot lined with warm shearling and a grippy sole.",
+   "descAr": "بوت كاحل من الشامواه مبطن بفرو دافئ ونعل مانع للانزلاق.",
+   "images": [],
+   "isNew": true,
+   "name": "Shearling Ankle Boot",
+   "nameAr": "بوت كاحل مبطن بالفرو",
+   "order": 49,
+   "price": 64,
+   "salePrice": null,
+   "sizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sku": "GB-0210",
+   "specs": [
+    [
+     "Upper",
+     "Suede",
+     "الجزء العلوي",
+     "شامواه"
+    ],
+    [
+     "Lining",
+     "Shearling",
+     "البطانة",
+     "فرو"
+    ],
+    [
+     "Sole",
+     "Rubber",
+     "النعل",
+     "مطاط"
+    ]
+   ],
+   "stock": {
+    "36": 10,
+    "37": 10,
+    "38": 10,
+    "39": 10,
+    "40": 10,
+    "41": 10
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/field-chrono": {
+   "active": true,
+   "art": "watch",
+   "badge": "",
+   "cat": "men-watches",
+   "colors": [
+    {
+     "hex": "#6E4B32",
+     "name": "Brown",
+     "nameAr": "بني"
+    },
+    {
+     "hex": "#5E6B4E",
+     "name": "Olive",
+     "nameAr": "زيتي"
+    }
+   ],
+   "createdAt": 1791456400000,
+   "desc": "Chronograph with a stitched leather strap and luminous hands.",
+   "descAr": "ساعة كرونوغراف بسوار جلدي مخيط وعقارب مضيئة.",
+   "images": [],
+   "isNew": false,
+   "name": "Field Chrono Watch",
+   "nameAr": "ساعة فيلد كرونو",
+   "order": 41,
+   "price": 55,
+   "salePrice": 49,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0202",
+   "specs": [
+    [
+     "Case",
+     "42 mm",
+     "العلبة",
+     "42 مم"
+    ],
+    [
+     "Strap",
+     "Leather",
+     "السوار",
+     "جلد"
+    ],
+    [
+     "Movement",
+     "Quartz chronograph",
+     "الحركة",
+     "كرونوغراف كوارتز"
+    ]
+   ],
+   "stock": {
+    "One size": 15
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/atelier-tophandle": {
+   "active": true,
+   "art": "tophandle",
+   "badge": "Bestseller",
+   "cat": "women-master-bags",
+   "colors": [
+    {
+     "hex": "#8A4B2A",
+     "name": "Cognac",
+     "nameAr": "كونياك"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    },
+    {
+     "hex": "#BDB2A2",
+     "name": "Stone",
+     "nameAr": "حجري"
+    }
+   ],
+   "createdAt": 1791268807591,
+   "desc": "Structured grained-leather bag with a removable shoulder strap.",
+   "descAr": "حقيبة من الجلد المحبب بتصميم متماسك مع حزام كتف قابل للفصل.",
+   "images": [],
+   "isNew": false,
+   "name": "Atelier Top-Handle",
+   "nameAr": "حقيبة أتيليه بمقبض علوي",
+   "order": 12,
+   "price": 79,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0112",
+   "specs": [
+    [
+     "Size",
+     "26 × 19 × 11 cm",
+     "الحجم",
+     "26 × 19 × 11 سم"
+    ],
+    [
+     "Material",
+     "Grained leather",
+     "الخامة",
+     "جلد محبب"
+    ],
+    [
+     "Closure",
+     "Turn-lock",
+     "الإغلاق",
+     "قفل دوّار"
+    ]
+   ],
+   "stock": {
+    "One size": 17
+   },
+   "updatedAt": 1791308407591
+  },
+  "products/satin-midi": {
+   "active": true,
+   "art": "dress",
+   "badge": "Exclusive",
+   "cat": "women-clothing",
+   "colors": [
+    {
+     "hex": "#D8C29A",
+     "name": "Champagne",
+     "nameAr": "شمبانيا"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black",
+     "nameAr": "أسود"
+    }
+   ],
+   "createdAt": 1791434800000,
+   "desc": "Bias-cut satin dress that falls to mid-calf.",
+   "descAr": "فستان ساتان بقصة مائلة يصل إلى منتصف الساق.",
+   "images": [],
+   "isNew": true,
+   "name": "Satin Midi Dress",
+   "nameAr": "فستان ساتان ميدي",
+   "order": 47,
+   "price": 48,
+   "salePrice": null,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "sku": "GB-0208",
+   "specs": [
+    [
+     "Fabric",
+     "Satin",
+     "القماش",
+     "ساتان"
+    ],
+    [
+     "Length",
+     "Midi",
+     "الطول",
+     "ميدي"
+    ],
+    [
+     "Care",
+     "Hand wash",
+     "العناية",
+     "غسيل يدوي"
+    ]
+   ],
+   "stock": {
+    "L": 10,
+    "M": 10,
+    "S": 10,
+    "XL": 10,
+    "XS": 10
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/luna-mesh": {
+   "active": true,
+   "art": "watch",
+   "badge": "",
+   "cat": "women-watches",
+   "colors": [
+    {
+     "hex": "#C99A86",
+     "name": "Rose gold",
+     "nameAr": "ذهبي وردي"
+    },
+    {
+     "hex": "#BFC3C9",
+     "name": "Silver",
+     "nameAr": "فضي"
+    }
+   ],
+   "createdAt": 1791452800000,
+   "desc": "Slim case on a fine mesh bracelet that adjusts without tools.",
+   "descAr": "علبة رفيعة على سوار شبكي ناعم يُعدّل بسهولة دون أدوات.",
+   "images": [],
+   "isNew": true,
+   "name": "Luna Mesh Watch",
+   "nameAr": "ساعة لونا ميش",
+   "order": 42,
+   "price": 59,
+   "salePrice": null,
+   "sizes": [
+    "One size"
+   ],
+   "sku": "GB-0203",
+   "specs": [
+    [
+     "Case",
+     "34 mm",
+     "العلبة",
+     "34 مم"
+    ],
+    [
+     "Strap",
+     "Steel mesh",
+     "السوار",
+     "شبك ستيل"
+    ],
+    [
+     "Water resistance",
+     "3 ATM",
+     "مقاومة الماء",
+     "3 ATM"
+    ]
+   ],
+   "stock": {
+    "One size": 15
+   },
+   "updatedAt": 1791460000000
+  },
+  "products/raffia-mule": {
+   "active": false,
+   "art": "mule",
+   "badge": "",
+   "cat": "",
+   "colors": [
+    {
+     "hex": "#C9A770",
+     "name": "Natural"
+    },
+    {
+     "hex": "#1C1A1E",
+     "name": "Black"
+    }
+   ],
+   "createdAt": 1791250807591,
+   "desc": "Hand-woven raffia mule on a jute sole, made for long Aegean summers.",
+   "images": [],
+   "isNew": false,
+   "name": "Raffia Mule",
+   "order": 17,
+   "price": 22,
+   "salePrice": null,
+   "sizes": [
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sku": "GB-0117",
+   "specs": [
+    [
+     "Upper",
+     "Woven raffia"
+    ],
+    [
+     "Sole",
+     "Jute + rubber"
+    ],
+    [
+     "Origin",
+     "Handmade"
+    ]
+   ],
+   "stock": {
+    "35": 9,
+    "36": 12,
+    "37": 12,
+    "38": 9,
+    "39": 12,
+    "40": 12,
+    "41": 9
+   },
+   "updatedAt": 1791308407591
+  },
+  "promos/WELCOME10": {
+   "active": true,
+   "code": "WELCOME10",
+   "createdAt": 1791308407591,
+   "minSubtotal": 0,
+   "type": "percent",
+   "value": 10
+  },
+  "promos/GIFT5": {
+   "active": true,
+   "code": "GIFT5",
+   "createdAt": 1791309100000,
+   "minSubtotal": 40,
+   "type": "amount",
+   "value": 5
+  },
+  "promos/HH22": {
+   "active": true,
+   "code": "HH22",
+   "createdAt": 1791576946458,
+   "minSubtotal": 25,
+   "type": "amount",
+   "value": 4
+  },
+  "promos/AW26": {
+   "active": true,
+   "code": "AW26",
+   "createdAt": 1791308407591,
+   "minSubtotal": 50,
+   "type": "percent",
+   "value": 15
+  },
+  "shop/settings": {
+   "announcement": "",
+   "announcementAr": "",
+   "cardEnabled": false,
+   "cliqAlias": "HAMZEH22",
+   "cliqEnabled": true,
+   "codEnabled": true,
+   "currency": "JOD",
+   "freeShip": 10,
+   "heroText": "Shoes, heels, eyewear and bags, delivered across Jordan.",
+   "heroTextAr": "أزياء للنساء والرجال، تصلك إلى كل الأردن.",
+   "heroTitle": "New season, wrapped and ready.",
+   "heroTitleAr": "موسم جديد، مغلّف وجاهز.",
+   "heroVideo": "",
+   "shipFee": 0,
+   "wrapFee": 2
+  }
+ },
+ "assets": {
+  "a9fb4f697a4395720ec0d6f64cb25912": {
+   "file": "a9fb4f697a4395720ec0d6f64cb25912.jpg",
+   "mime": "image/jpeg"
+  },
+  "6857a664d3a58e2121d4402da37eb3cc": {
+   "file": "6857a664d3a58e2121d4402da37eb3cc.jpg",
+   "mime": "image/jpeg"
+  },
+  "1b9384d3a2e4d9ce7651b784974d3328": {
+   "file": "1b9384d3a2e4d9ce7651b784974d3328.jpg",
+   "mime": "image/jpeg"
+  }
+ }
+}

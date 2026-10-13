@@ -1,0 +1,52 @@
+# Runs the store and its PostgreSQL database on one server:
+#   cp .env.example .env   (then edit .env)
+#   docker compose up -d --build                    (http on port 3000)
+#   docker compose --profile https up -d --build    (https on your DOMAIN)
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: giftbox
+      POSTGRES_USER: giftbox
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U giftbox -d giftbox"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://giftbox:${POSTGRES_PASSWORD}@db:5432/giftbox
+    ports:
+      - "${APP_PORT:-3000}:3000"
+
+  # Optional HTTPS on your own domain:  docker compose --profile https up -d --build
+  caddy:
+    image: caddy:2-alpine
+    profiles: ["https"]
+    restart: unless-stopped
+    depends_on: [app]
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN:?Set DOMAIN in .env to use HTTPS}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  pgdata:
+  caddy_data:
+  caddy_config:

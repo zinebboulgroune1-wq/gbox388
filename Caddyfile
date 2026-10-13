@@ -1,0 +1,11 @@
+# HTTPS in front of the store (certificates are issued automatically by Let's Encrypt).
+{$DOMAIN} {
+	encode gzip
+	reverse_proxy app:3000 {
+		# keep live updates (Server-Sent Events) streaming
+		flush_interval -1
+	}
+}
+www.{$DOMAIN} {
+	redir https://{$DOMAIN}{uri} permanent
+}
