@@ -100,26 +100,58 @@ docker compose exec app node scripts/reset-owner.js your@email.com "NewPassword2
 
 ---
 
-## إيميل عند كل طلب جديد
+## إيميلات الطلبات: للإدارة وفاتورة للزبون
 
-عند كل طلب جديد يصل للإدارة إيميل فيه رقم الطلب، واسم الزبون ورقمه مع زر واتساب، والعنوان، وطريقة الدفع، والمنتجات والمبلغ، وزر لفتح لوحة التحكم.
+عند كل طلب جديد يُرسل السيرفر تلقائياً:
 
-لتفعيله مع Gmail:
+1. **إيميل للفريق** فيه رقم الطلب، واسم الزبون ورقمه مع زر واتساب، والعنوان، وطريقة الدفع، والمنتجات والمبلغ، وزر لفتح لوحة التحكم. يصل إلى:
+   - **المدير الرئيسي** (إيميل الدخول للوحة التحكم).
+   - **كل مساعد مفعّل وله صلاحية «الطلبات»** (عرض أو تعديل). المساعد الموقوف، أو الذي ليس له صلاحية الطلبات، لا يصله شيء.
+   - أي إيميلات إضافية تكتبها في `NOTIFY_EMAIL` (افصل بينها بفاصلة).
+   
+   يُرسل الإيميل بنسخة مخفية (BCC)، فلا يرى أحد إيميلات الباقين.
+2. **فاتورة للزبون**: في صفحة الدفع خانة «البريد الإلكتروني (اختياري)». إذا كتبها الزبون تصله فاتورة بلغة الطلب (عربي أو إنجليزي) فيها رقم الطلب والتاريخ والمنتجات والمجموع والخصم والتوصيل والإجمالي وطريقة الدفع والعنوان وموعد التوصيل (1 إلى 5 أيام عمل)، وزر «تتبع طلبي عبر واتساب»، ومعلومات التواصل.
+
+   وإذا ما كتب إيميله بصفحة الدفع، بتطلعله بصفحة تأكيد الطلب خانة اختيارية «بدك الفاتورة على إيميلك؟»، بيكتب إيميله وبيضغط «أرسل الفاتورة» فتوصله فوراً (حد أقصى 3 مرات لكل طلب).
+
+### على Railway: استعمل Resend (لازم)
+
+Railway يمنع إرسال الإيميل عبر Gmail (منافذ SMTP مسكّرة)، فنستعمل خدمة **Resend** عبر API:
+
+1. اعمل حساب على [resend.com](https://resend.com) وانسخ **API key** (يبدأ بـ `re_`).
+2. في Resend افتح **Domains → Add Domain** واكتب `gbox377.com`. سيعطيك عدة سجلات DNS (TXT و MX).
+3. في Namecheap افتح **Domain List → Manage → Advanced DNS** وأضف السجلات كما هي، ثم ارجع لـ Resend واضغط **Verify**. التفعيل يأخذ من دقائق لساعات.
+4. في Railway، خدمة المتجر → **Variables**، أضف:
+   ```
+   RESEND_API_KEY=re_...مفتاحك...
+   MAIL_FROM=giftbox377 <orders@gbox377.com>
+   NOTIFY_EMAIL=gbox41409@gmail.com
+   SITE_URL=https://gbox377.com
+   ```
+5. Railway يعيد التشغيل تلقائياً، وتبدأ الإيميلات بالوصول.
+
+> **لا تضع المفتاح داخل الكود أو على GitHub أبداً**، فقط في Variables. إذا انكشف، احذفه من Resend وأنشئ واحداً جديداً.
+>
+> قبل تفعيل الدومين، Resend يسمح فقط بالإرسال لإيميل حسابك نفسه، فلن تصل فواتير الزبائن حتى يتم **Verify**.
+
+### على VPS: Gmail يكفي
+
+لتفعيلها مع Gmail:
 1. فعّل **التحقق بخطوتين** على حساب Gmail الذي سيُرسل منه الإيميل.
 2. افتح [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) وأنشئ **App password** باسم giftbox377. ستحصل على كلمة سر من 16 حرفاً.
-3. في `.env` اكتب:
+3. في `.env` (أو Variables في Railway) اكتب:
    ```
-   NOTIFY_EMAIL=gbox41409@gmail.com
    SITE_URL=https://gbox377.com
    SMTP_HOST=smtp.gmail.com
    SMTP_PORT=465
    SMTP_USER=gbox41409@gmail.com
    SMTP_PASS=كلمة السر المكونة من 16 حرفاً
    MAIL_FROM=giftbox377 <gbox41409@gmail.com>
+   NOTIFY_EMAIL=gbox41409@gmail.com
    ```
 4. أعد التشغيل: `docker compose up -d`
 
-لإرسال الإيميل لأكثر من شخص، افصل بينهم بفاصلة في `NOTIFY_EMAIL`. إذا لم تُعبّأ هذه الإعدادات، يعمل المتجر عادي ولا تُرسل إيميلات.
+إذا لم تُعبّأ إعدادات SMTP، يعمل المتجر عادي ولا تُرسل إيميلات. Gmail يسمح بحوالي 500 إيميل يومياً، وهذا كافٍ لمتجر في بدايته.
 
 ---
 
@@ -165,7 +197,7 @@ src/orders.js     التحقق من الطلبات وإعادة حساب الأ�
 src/auth.js       كلمات السر والجلسات
 src/db.js         قاعدة البيانات (تُنشأ الجداول تلقائياً)
 src/seed.js       تحميل الكتالوج عند أول تشغيل
-src/notify.js     إيميل للإدارة عند كل طلب جديد
+src/notify.js     إيميل للإدارة والمساعدين وفاتورة للزبون عند كل طلب
 public/index.html المتجر ولوحة التحكم
 public/shim.js    ربط الواجهة بالسيرفر
 seed/             الكتالوج وصور المنتجات
@@ -199,7 +231,7 @@ scripts/          أداة إعادة تعيين كلمة سر المدير
 
 Access rules are in `src/rules.js`, and new orders are re-priced and validated in `src/orders.js`.
 
-**Order emails:** set `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `MAIL_FROM` and `NOTIFY_EMAIL` (comma-separated) to email the team on every new order. With Gmail, use smtp.gmail.com:465 and an App password.
+**Order emails:** on Railway (SMTP ports blocked) set `RESEND_API_KEY` and `MAIL_FROM` on a domain verified in Resend. Otherwise set `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` and `MAIL_FROM`. On every new order the main admin, every active assistant with access to orders, and any extra addresses in `NOTIFY_EMAIL` get an order email (sent as BCC). If the shopper entered an email at checkout, they get an invoice in their language. With Gmail, use smtp.gmail.com:465 and an App password.
 
 **Card payments** are disabled and refused by the server until a real payment gateway is integrated.
 

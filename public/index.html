@@ -757,6 +757,10 @@ table.vt{min-width:0}.a-tools .segb button{padding:8px 13px;white-space:nowrap}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 .toast.err{background:var(--err);color:var(--on-err)}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}}
+.inv-ask{display:grid;grid-template-columns:minmax(0,1fr);box-sizing:border-box;width:100%;min-width:0;gap:6px;margin-top:4px;padding:14px 16px;border:1px dashed var(--line);border-radius:14px;max-width:460px;background:var(--surface,transparent)}
+.inv-ask .sub{font-size:13px}
+.inv-row{display:flex;gap:8px;min-width:0}.inv-row input{flex:1 1 0;min-width:0;width:auto}.inv-row .btn{flex:none}
+.inv-ask .msg{color:var(--err,#c0392b);font-size:13px}.inv-ask .msg:empty{display:none}
 </style>
 <script>
 (function(){var t=null;try{t=JSON.parse(localStorage.getItem("giftbox-theme"))}catch(e){}
@@ -918,7 +922,7 @@ const DICT = {
     viewX:"View {x}", addX:"Add {x} to bag",
     svc1T:"Delivery in 1–5 business days", svc1S:"Free over {a}, otherwise {b}.", svc1Sfree:"Free delivery on every order.", svc2T:"Pay your way", payOnlineCliq:"Secure online or CliQ payment", payCash:"cash at your door", or:" or ", payNone:"Payment options coming soon",
     svc3T:"Inspection on delivery", svc3S:"Check your order in front of the courier before you accept it.", svc4T:"Gift card", svc4S:"Ribbon box and handwritten note, {a}.",
-    footAbout:"Fashion for women and men, chosen for gifting and delivered across Jordan.", help:"Help", trackOrder:"Track my order", returns:"Inspection on delivery", sizeGuide:"Size guide", paySec:"Security & Privacy Policy", contact:"Contact us", waLabel:"WhatsApp", urgT:"Your items aren't reserved yet", urgS:"Stock is limited. Complete your order now before they sell out.", lowLeft:"Hurry, only {n} left", remTxt:"{n} in your bag", remCta:"Complete order", remS:"Not reserved yet, complete your order now", welcomeBack:"Welcome back! Your items are still in your bag. Complete your order before they sell out.", nudge:"Don't miss out! Your items aren't reserved, complete your order now.", tgLbl:"Telegram", waTrack:"Track my order on WhatsApp", waTrackS:"Message us your order number and we'll reply with its status.", waMsg:"Hello GiftBox, I'd like to track my order.\nOrder number: {o}\nName: {n}\nTotal: {p}", emailLbl:"Email", waChat:"Chat with us on WhatsApp", hours:"Open 24 hours, 7 days a week", proto:"© 2026 giftbox377 · All rights reserved",
+    footAbout:"Fashion for women and men, chosen for gifting and delivered across Jordan.", help:"Help", trackOrder:"Track my order", returns:"Inspection on delivery", sizeGuide:"Size guide", paySec:"Security & Privacy Policy", contact:"Contact us", waLabel:"WhatsApp", emailL:"Email", invAskT:"Want your invoice by email?", invSaved:"Your email {e} is saved on this order.", invAskS:"Add your email and we'll send the invoice and order details right away.", invSend:"Send invoice", invSending:"Sending…", invFail:"We couldn't send it. Check the email and try again.", emailHelp:"We'll email your invoice and order details here.", eEmail:"Enter a valid email address, or leave it empty.", invoiceSent:"Your invoice is on its way to {e}.", urgT:"Your items aren't reserved yet", urgS:"Stock is limited. Complete your order now before they sell out.", lowLeft:"Hurry, only {n} left", remTxt:"{n} in your bag", remCta:"Complete order", remS:"Not reserved yet, complete your order now", welcomeBack:"Welcome back! Your items are still in your bag. Complete your order before they sell out.", nudge:"Don't miss out! Your items aren't reserved, complete your order now.", tgLbl:"Telegram", waTrack:"Track my order on WhatsApp", waTrackS:"Message us your order number and we'll reply with its status.", waMsg:"Hello GiftBox, I'd like to track my order.\nOrder number: {o}\nName: {n}\nTotal: {p}", emailLbl:"Email", waChat:"Chat with us on WhatsApp", hours:"Open 24 hours, 7 days a week", proto:"© 2026 giftbox377 · All rights reserved",
     colourL:"Colour", sizeL:"Size", sizeEU:"Size (EU)", selected:"Selected: {s}", chooseOne:"Choose one", chooseSize:"Choose a size to add this to your bag.", onlyLeftIn:"Only {n} left in {s}", onlyLeft:"Only {n} left", soldOutBanner:"Sold out for now. Check back soon.",
     quantity:"Quantity", addToBag:"Add to bag · {p}", buyNow:"Buy now", saveP:"Save {p}", deliv24:"Delivery in 1–5 business days", payOnline:"Online payment", codShort:"cash on delivery", ret14:"Inspection on delivery", noLonger:"This product is no longer available", imageN:"Image {n}", decQty:"Decrease quantity", incQty:"Increase quantity", close:"Close", oneSize:"One size",
     noMore:"No more {x} in {s} available", addedAll:"Added {n} (all we have in stock)", added:"Added {n} × {x} to your bag",
@@ -982,7 +986,7 @@ const DICT = {
     viewX:"عرض {x}", addX:"أضف {x} إلى السلة",
     svc1T:"التوصيل خلال 1–5 أيام عمل", svc1S:"مجاني فوق {a}، وإلا {b}.", svc1Sfree:"توصيل مجاني لكل الطلبات.", svc2T:"ادفع بطريقتك", payOnlineCliq:"دفع إلكتروني آمن أو عبر كليك", payCash:"نقداً عند الباب", or:" أو ", payNone:"خيارات الدفع قريباً",
     svc3T:"يوجد معاينة عند الاستلام", svc3S:"افحص طلبك أمام المندوب قبل استلامه.", svc4T:"كرت الهدايا", svc4S:"علبة بشريطة وبطاقة مكتوبة بخط اليد، {a}.",
-    footAbout:"أزياء للنساء والرجال، مختارة للإهداء ومُوصلة إلى كل الأردن.", help:"المساعدة", trackOrder:"تتبّع طلبي", returns:"يوجد معاينة عند الاستلام", sizeGuide:"دليل المقاسات", paySec:"سياسة الأمان والخصوصية", contact:"تواصل معنا", waLabel:"واتساب", urgT:"منتجاتك غير محجوزة بعد", urgS:"الكميات محدودة. أكمل طلبك الآن قبل نفادها.", lowLeft:"أسرع، بقي {n} فقط", remTxt:"{n} في سلتك", remCta:"أكمل الطلب", remS:"غير محجوزة بعد، أكمل طلبك الآن", welcomeBack:"أهلاً بعودتك! منتجاتك ما زالت في السلة. أكمل طلبك قبل نفادها.", nudge:"لا تفوّت منتجاتك! هي غير محجوزة بعد، أكمل طلبك الآن.", tgLbl:"تيليجرام", waTrack:"تتبّع طلبي عبر واتساب", waTrackS:"أرسل لنا رقم طلبك على واتساب وسنرد عليك بحالته.", waMsg:"مرحباً GiftBox، أريد تتبّع طلبي.\nرقم الطلب: {o}\nالاسم: {n}\nالمبلغ: {p}", emailLbl:"البريد الإلكتروني", waChat:"راسلنا على واتساب", hours:"دوام 24 ساعة، 7 أيام في الأسبوع", proto:"© 2026 giftbox377 · جميع الحقوق محفوظة",
+    footAbout:"أزياء للنساء والرجال، مختارة للإهداء ومُوصلة إلى كل الأردن.", help:"المساعدة", trackOrder:"تتبّع طلبي", returns:"يوجد معاينة عند الاستلام", sizeGuide:"دليل المقاسات", paySec:"سياسة الأمان والخصوصية", contact:"تواصل معنا", waLabel:"واتساب", emailL:"البريد الإلكتروني", invAskT:"بدك الفاتورة على إيميلك؟", invSaved:"تم حفظ إيميلك {e} على الطلب.", invAskS:"اكتب إيميلك ونبعتلك الفاتورة وتفاصيل الطلب فوراً.", invSend:"أرسل الفاتورة", invSending:"جارٍ الإرسال…", invFail:"ما قدرنا نرسلها. تأكد من الإيميل وحاول مرة ثانية.", emailHelp:"نرسل لك الفاتورة وتفاصيل الطلب على هذا البريد.", eEmail:"اكتب بريداً إلكترونياً صحيحاً، أو اتركه فارغاً.", invoiceSent:"أرسلنا الفاتورة إلى {e}.", urgT:"منتجاتك غير محجوزة بعد", urgS:"الكميات محدودة. أكمل طلبك الآن قبل نفادها.", lowLeft:"أسرع، بقي {n} فقط", remTxt:"{n} في سلتك", remCta:"أكمل الطلب", remS:"غير محجوزة بعد، أكمل طلبك الآن", welcomeBack:"أهلاً بعودتك! منتجاتك ما زالت في السلة. أكمل طلبك قبل نفادها.", nudge:"لا تفوّت منتجاتك! هي غير محجوزة بعد، أكمل طلبك الآن.", tgLbl:"تيليجرام", waTrack:"تتبّع طلبي عبر واتساب", waTrackS:"أرسل لنا رقم طلبك على واتساب وسنرد عليك بحالته.", waMsg:"مرحباً GiftBox، أريد تتبّع طلبي.\nرقم الطلب: {o}\nالاسم: {n}\nالمبلغ: {p}", emailLbl:"البريد الإلكتروني", waChat:"راسلنا على واتساب", hours:"دوام 24 ساعة، 7 أيام في الأسبوع", proto:"© 2026 giftbox377 · جميع الحقوق محفوظة",
     colourL:"اللون", sizeL:"المقاس", sizeEU:"المقاس (أوروبي)", selected:"المختار: {s}", chooseOne:"اختر مقاساً", chooseSize:"اختر المقاس لإضافة المنتج إلى السلة.", onlyLeftIn:"بقي {n} فقط من مقاس {s}", onlyLeft:"بقي {n} فقط", soldOutBanner:"نفدت الكمية حالياً. عد قريباً.",
     quantity:"الكمية", addToBag:"أضف إلى السلة · {p}", buyNow:"اشترِ الآن", saveP:"وفّر {p}", deliv24:"التوصيل خلال 1–5 أيام عمل", payOnline:"دفع إلكتروني", codShort:"الدفع عند الاستلام", ret14:"يوجد معاينة عند الاستلام", noLonger:"هذا المنتج لم يعد متوفراً", imageN:"صورة {n}", decQty:"إنقاص الكمية", incQty:"زيادة الكمية", close:"إغلاق", oneSize:"مقاس واحد",
     noMore:"لا تتوفر كمية إضافية من {x} بمقاس {s}", addedAll:"تمت إضافة {n} (كل الكمية المتوفرة)", added:"تمت إضافة {n} × {x} إلى السلة",
@@ -1603,6 +1607,7 @@ function renderCheckout() {
             <div class="field full"><label for="fPhone">${t("mobile")}</label>
               <div class="phone-in"><span class="cc" aria-hidden="true">+962</span><input id="fPhone" type="tel" inputmode="tel" autocomplete="tel-national" value="${esc(joPhoneTyping(ph))}" placeholder="79 123 4567" aria-describedby="phoneHelp"></div>
               <span class="help" id="phoneHelp">${t("phoneHelp")}</span><span class="msg"></span></div>
+            ${true ? `<div class="field full"><label for="fEmail">${t("emailL")} <span class="opt">${t("optional")}</span></label><input id="fEmail" type="email" inputmode="email" autocomplete="email" dir="ltr" value="${esc(me.email || "")}" placeholder="name@example.com" aria-describedby="emailHelp"><span class="help" id="emailHelp">${t("emailHelp")}</span><span class="msg"></span></div>` : ""}
             <div class="field"><label for="fCity">${t("city")}</label><select id="fCity" autocomplete="address-level1"><option value="">${t("chooseCity")}</option>${JO_CITIES.map(c=>`<option value="${esc(c)}" ${me.city===c?"selected":""}>${esc(cityName(c))}</option>`).join("")}</select><span class="msg"></span></div>
             <div class="field"><label for="fDistrict">${t("area")}</label><input id="fDistrict" autocomplete="address-level2" value="${esc(me.district)}" placeholder="${t("areaPh")}"><span class="msg"></span></div>
             <div class="field full"><label for="fAddr">${t("addr")}</label><textarea id="fAddr" autocomplete="street-address" placeholder="${t("addrPh")}">${esc(me.address)}</textarea><span class="msg"></span></div>
@@ -1686,6 +1691,7 @@ function validate() {
   chk("fName", v("fName").split(/\s+/).filter(Boolean).length >= 2, t("eName"));
   const ph = normJoPhone(v("fPhone"));
   chk("fPhone", joPhoneOk(ph), !ph ? t("ePhoneEmpty") : ph.length !== 9 ? t("ePhoneLen", {n: ph.length}) : t("ePhonePre"));
+  if (v("fEmail")) chk("fEmail", /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v("fEmail")) && v("fEmail").length <= 120, t("eEmail"));
   chk("fCity", !!v("fCity"), t("eCity"));
   chk("fDistrict", v("fDistrict").length >= 2, t("eArea"));
   chk("fAddr", v("fAddr").length >= 10, t("eAddr"));
@@ -1720,13 +1726,13 @@ async function submitOrder(e) {
     items: t_.lines.map(l => { const c = colorsOf(l.p).find(c=>c.name===l.color) || colorsOf(l.p)[0]; return {pid:l.p.id, name:l.p.name, nameAr:l.p.nameAr || "", color:l.color, colorAr:c.nameAr || "", size:l.size, qty:l.qty, price:priceOf(l.p), image: imagesOf(l.p)[0] || "", art: l.p.art || "giftbox", hex: c.hex}; }),
     subtotal: t_.sub, discount: t_.discount, promo: t_.discount ? t_.promo.code : "", ship: t_.ship, wrap: t_.wrap, note: S.wrap ? S.note.slice(0,200) : "", total: t_.total,
     payment: kind, card: kind === "card" ? {brand: brand(digits), last4: digits.slice(-4)} : null, cliqAlias: kind === "cliq" ? (S.settings.cliqAlias || "GIFTBOX") : "",
-    name: v("fName").replace(/\s+/g," "), phone: joPhoneFmt(normJoPhone(v("fPhone"))), city: v("fCity"), district: v("fDistrict"), address: v("fAddr"), deliveryNotes: v("fNotes").slice(0,300)
+    name: v("fName").replace(/\s+/g," "), phone: joPhoneFmt(normJoPhone(v("fPhone"))), city: v("fCity"), district: v("fDistrict"), address: v("fAddr"), deliveryNotes: v("fNotes").slice(0,300), email: v("fEmail").toLowerCase().slice(0,120)
   };
   busy = true;
   const form = $("#coForm"), btn = $("#payBtn");
   btn.disabled = true; btn.innerHTML = `<span class="spinner sm" style="border-top-color:currentColor"></span> ${kind==="card"?t("confirmingBank"):t("placing")}`;
   form.querySelectorAll("input,select,textarea,button").forEach(x => x.disabled = true);
-  const profile = {name:order.name, phone:order.phone, city:order.city, district:order.district, address:order.address, updatedAt: now};
+  const profile = {name:order.name, phone:order.phone, email:order.email || "", city:order.city, district:order.district, address:order.address, updatedAt: now};
   const prev = (S.me && Array.isArray(S.me.orders)) ? S.me.orders : [];
   try {
     await new Promise(r => setTimeout(r, kind === "card" ? 1500 : 600));
@@ -1782,6 +1788,20 @@ function renderPolicy() {
 const WA_NO = "962790179582";
 const waTrackUrl = o => "https://wa.me/" + WA_NO + "?text=" + encodeURIComponent(t("waMsg", {o: o.id, n: o.name, p: fmtC(o.total, o.currency)}));
 const waTrackBtn = (o, cls = "") => `<a class="btn wa ${cls}" href="${waTrackUrl(o)}" target="_blank" rel="noopener">${I.wa}${t("waTrack")}</a>`;
+document.addEventListener("submit", async e => {
+  const f = e.target.closest && e.target.closest(".inv-ask"); if (!f) return;
+  e.preventDefault();
+  const inp = f.querySelector("input"), btn = f.querySelector("button"), msg = f.querySelector(".msg");
+  const email = inp.value.trim().toLowerCase();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || email.length > 120) { msg.textContent = t("eEmail"); inp.focus(); return; }
+  msg.textContent = ""; btn.disabled = true; btn.textContent = t("invSending");
+  try {
+    if (window.GB_SERVER) await window.GB_SERVER.api("POST", "/api/invoice", {id: f.dataset.id, email});
+    else { const os = (S.me && S.me.orders) || []; await S.db.doc("customers/" + S.uid).update({orders: os.map(x => x.id === f.dataset.id ? {...x, email} : x)}); }
+    for (const o of [LAST_ORDER, ...((S.me && S.me.orders) || [])]) if (o && o.id === f.dataset.id) o.email = email;
+    renderConfirm(); toast(t(window.GB_SERVER ? "invoiceSent" : "invSaved", {e: email}).replace(/<[^>]+>/g, ""));
+  } catch (err) { btn.disabled = false; btn.textContent = t("invSend"); msg.textContent = t("invFail"); }
+});
 function renderConfirm() {
   const v = $("#confirmView");
   const o = LAST_ORDER && ((S.me && (S.me.orders||[]).find(x => x.id === LAST_ORDER.id)) || LAST_ORDER);
@@ -1802,6 +1822,9 @@ function renderConfirm() {
         <p class="muted" style="margin:0;max-width:54ch">${t("received", {w: o.wrapped ? t("wrappedTxt") : ""})}</p>
         <div class="ordno"><div><span class="sub">${t("orderNo")}</span><b class="mono" id="ordNo" dir="ltr">${esc(o.id)}</b></div><button class="btn ghost sm" data-action="copy-order" data-id="${esc(o.id)}">${t("copy")}</button></div>
         <div class="wa-track">${waTrackBtn(o)}<span class="sub">${t("waTrackS")}</span></div>
+        ${o.email ? `<p class="muted" style="margin:0">✉️ ${t(window.GB_SERVER ? "invoiceSent" : "invSaved", {e: `<b dir="ltr">${esc(o.email)}</b>`})}</p>`
+          : `<form class="inv-ask" data-id="${esc(o.id)}" novalidate><label for="invEmail"><b>✉️ ${t("invAskT")}</b> <span class="opt">${t("optional")}</span></label><span class="sub">${t("invAskS")}</span>
+              <div class="inv-row"><input id="invEmail" type="email" inputmode="email" autocomplete="email" dir="ltr" placeholder="name@example.com" maxlength="120"><button class="btn sm" type="submit">${t("invSend")}</button></div><span class="msg" role="alert"></span></form>`}
       </div>
     </section>
     <section class="order-card"><div class="oc-head"><h3>${t("orderStatus")}</h3>${pill(s.status)}</div>${trackerHtml(o)}<div class="sub">${t("statusNote")}</div></section>

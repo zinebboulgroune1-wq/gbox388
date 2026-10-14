@@ -295,6 +295,33 @@ async function writeDoc(req, res, mode) {
   res.json({ ok: true });
   if (req.newOrder) notify.newOrder(req.newOrder); // email the store team (doesn't delay the shopper)
 }
+// A shopper adds an email after ordering (on the confirmation page) and gets the invoice.
+// Only for their own order, at most 3 times per order.
+app.post('/api/invoice', express.json({ limit: '4kb' }), wrap(async (req, res) => {
+  const ctx = await ctxOf(req, res);
+  const id = String((req.body && req.body.id) || ''), email = String((req.body && req.body.email) || '').trim().toLowerCase();
+  if (!/^GB-[A-Z0-9]{4,16}$/.test(id)) return fail(res, 400, 'invalid_argument', 'Bad order number.');
+  if (email.length > 120 || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return fail(res, 422, 'invalid_argument', 'Enter a valid email address.');
+  if (limited('inv:' + ctx.uid, 5, 3600e3)) return fail(res, 429, 'rate_limited', 'Too many tries. Please wait a little.');
+  const p = 'customers/' + ctx.uid;
+  let order = null;
+  try {
+    await db.tx(async c => {
+      const doc = await db.getDocForUpdate(c, p);
+      const list = doc && Array.isArray(doc.orders) ? doc.orders : [];
+      const o = list.find(x => x && x.id === id);
+      if (!o) throw Object.assign(new Error('Order not found.'), { http: 404, code: 'invalid_argument' });
+      if ((+o.invoiceSends || 0) >= 3) throw Object.assign(new Error('The invoice was already sent several times. Contact us on WhatsApp.'), { http: 429, code: 'rate_limited' });
+      o.email = email; o.invoiceSends = (+o.invoiceSends || 0) + 1;
+      await db.putDoc(c, p, doc);
+      order = o;
+    });
+  } catch (e) { if (e.http) return fail(res, e.http, e.code, e.message); throw e; }
+  broadcast([p]);
+  const sent = await notify.sendInvoice(order);
+  if (!sent) return fail(res, 503, 'unavailable', 'Email is not available right now.');
+  res.json({ ok: true });
+}));
 app.put('/api/doc', wrap((req, res) => writeDoc(req, res, 'set')));
 app.patch('/api/doc', wrap((req, res) => writeDoc(req, res, 'update')));
 app.delete('/api/doc', wrap((req, res) => writeDoc(req, res, 'delete')));

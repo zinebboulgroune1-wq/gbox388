@@ -23,7 +23,9 @@ const str = (v, max) => typeof v === 'string' && v.trim().length > 0 && v.length
 const SETTINGS_DEFAULT = { currency: 'JOD', freeShip: 50, shipFee: 3, wrapFee: 2, codEnabled: true, cardEnabled: false, cliqEnabled: true, cliqAlias: 'GIFTBOX' };
 
 // Fields a shopper may still change on an order after placing it (CliQ receipt re-upload).
-const MUTABLE_ORDER_FIELDS = new Set(['receipt', 'resubmittedAt']);
+const MUTABLE_ORDER_FIELDS = new Set(['receipt', 'resubmittedAt', 'email', 'invoiceSends']);
+// ...but these two are only set by the server (POST /api/invoice), so a shopper's write keeps the stored values.
+const SERVER_ORDER_FIELDS = ['email', 'invoiceSends'];
 const canon = v => Array.isArray(v) ? v.map(canon)
   : v && typeof v === 'object' ? Object.fromEntries(Object.keys(v).sort().map(k => [k, canon(v[k])])) : v;
 const stable = v => JSON.stringify(canon(v));
@@ -40,6 +42,7 @@ async function validateCustomerWrite(uid, prev, next) {
     if (!n) throw new OrderError('Orders cannot be removed.');
     const strip = x => Object.fromEntries(Object.entries(x).filter(([k]) => !MUTABLE_ORDER_FIELDS.has(k)));
     if (stable(strip(o)) !== stable(strip(n))) throw new OrderError('Placed orders cannot be changed.');
+    for (const k of SERVER_ORDER_FIELDS) { if (o[k] === undefined) delete n[k]; else n[k] = o[k]; }
   }
   const fresh = after.filter(o => !byId.has(o && o.id));
   if (!fresh.length) return next;
@@ -107,13 +110,15 @@ async function validateNewOrder(o) {
   if (typeof o.phone !== 'string' || !/^\+962 7[789] \d{3} \d{4}$/.test(o.phone)) throw new OrderError('Enter a valid Jordanian mobile number.');
   if (!JO_CITIES.includes(o.city)) throw new OrderError('Choose your city.');
   if (!str(o.district, 80) || !str(o.address, 300)) throw new OrderError('Enter your full address.');
+  const email = typeof o.email === 'string' ? o.email.trim().toLowerCase() : '';
+  if (email && (email.length > 120 || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))) throw new OrderError('Enter a valid email address.');
 
   return {
     id: o.id, at: Date.now(), currency: settings.currency || 'JOD', receipt: o.payment === 'cliq' && !!o.receipt, lang: o.lang === 'ar' ? 'ar' : 'en',
     items, subtotal: sub, discount, promo, ship, wrap, note: wrap ? String(o.note || '').slice(0, 200) : '', total,
     payment: o.payment, card: null, cliqAlias: o.payment === 'cliq' ? (settings.cliqAlias || 'GIFTBOX') : '',
     name: o.name.trim().replace(/\s+/g, ' '), phone: o.phone, city: o.city, district: o.district.trim(), address: o.address.trim(),
-    deliveryNotes: String(o.deliveryNotes || '').slice(0, 300),
+    deliveryNotes: String(o.deliveryNotes || '').slice(0, 300), email,
   };
 }
 
